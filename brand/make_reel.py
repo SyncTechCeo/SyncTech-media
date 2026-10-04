@@ -5,7 +5,7 @@ Użycie:
 
 spec.json:
 {
-  "variant": "dark",                 # "dark" (domyślnie) lub "light"
+  "variant": "light",                # "light" (domyślnie, zalecane) lub "dark"
   "scenes": [
     {"dur": 3.0, "lines": ["3 rzeczy,", "które Twój sklep"], "accent": "powinien robić sam"},
     {"dur": 3.0, "num": "1", "lines": ["Przenoszenie", "zamówień"], "sub": ["z wielu kanałów do", "jednego panelu"]},
@@ -39,19 +39,26 @@ def background(th, t, dark):
     img = Image.new("RGBA", (W, H), th["bg"] + (255,))
     layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     ld = ImageDraw.Draw(layer)
-    grid = [[T_DARK, T_MID, T_LIGHT], [T_MID, T_BRIGHT, T_LIGHT], [T_LIGHT, T_MID, T_DARK]]
+    if dark:
+        grid = [[T_DARK, T_MID, T_LIGHT], [T_MID, T_BRIGHT, T_LIGHT], [T_LIGHT, T_MID, T_DARK]]
+        a1 = a2 = th["tile_alpha"]
+    else:
+        # jasne miętowe odcienie marki (pełne kolory, bez szarego przebarwienia)
+        M1, M2, M3 = (214, 238, 233), (198, 233, 225), (228, 245, 241)
+        grid = [[M2, M1, M3], [M1, (186, 232, 222), M3], [M3, M1, M2]]
+        a1 = a2 = 255
     s, gap = 200, 22
     drift = int(t * 6)  # wolny dryf kafelków
     ox, oy = 560 - drift, -40 + drift // 2
     for r in range(3):
         for c in range(3):
             x, y = ox + c * (s + gap), oy + r * (s + gap)
-            ld.rounded_rectangle((x, y, x + s, y + s), radius=34, fill=grid[r][c] + (th["tile_alpha"],))
+            ld.rounded_rectangle((x, y, x + s, y + s), radius=34, fill=grid[r][c] + (a1,))
     ox2, oy2 = -260 + drift, 1500 - drift // 2
     for r in range(2):
         for c in range(2):
             x, y = ox2 + c * (s + gap), oy2 + r * (s + gap)
-            ld.rounded_rectangle((x, y, x + s, y + s), radius=34, fill=grid[r + 1][c] + (th["tile_alpha"] // 2,))
+            ld.rounded_rectangle((x, y, x + s, y + s), radius=34, fill=grid[r + 1][c] + (a2,))
     return Image.alpha_composite(img, layer)
 
 
@@ -64,7 +71,7 @@ def load_logo(dark):
                 r, g, b, a = px[xx, yy]
                 if a and max(r, g, b) < 60:
                     px[xx, yy] = (240, 246, 244, a)
-    lw = 360
+    lw = 400
     return logo.resize((lw, int(logo.height * lw / logo.width)), Image.LANCZOS)
 
 
@@ -88,7 +95,7 @@ def scene_items(d, sc, th):
             items.append(("text", ln, hf, th["accent"] if is_acc else th["ink"], int(size * 1.18)))
     if sc.get("sub"):
         items.append(("gap", None, None, None, 30))
-        sf = font("Medium", 46)
+        sf = font("Medium", fit_size(d, sc["sub"], "Medium", 46, W - 2 * MARGIN))
         for ln in sc["sub"]:
             items.append(("text", ln, sf, th["muted"], 62))
     if sc.get("cta"):
@@ -129,7 +136,7 @@ def draw_scene(base, sc, th, lt, dur):
 
 
 def render(spec, out):
-    variant = spec.get("variant", "dark")
+    variant = spec.get("variant", "light")
     th = THEMES[variant]
     logo = load_logo(variant == "dark")
     scenes = spec["scenes"]
@@ -154,7 +161,7 @@ def render(spec, out):
         frame.alpha_composite(logo, (MARGIN, 150))
         # pasek postępu
         d = ImageDraw.Draw(frame)
-        d.rounded_rectangle((MARGIN, 1440, W - MARGIN, 1446), radius=3, fill=th["muted"] + (60,))
+        d.rounded_rectangle((MARGIN, 1440, W - MARGIN, 1446), radius=3, fill=(214, 228, 225) if variant != "dark" else (40, 62, 58))
         d.rounded_rectangle((MARGIN, 1440, MARGIN + int((W - 2 * MARGIN) * t / total), 1446), radius=3, fill=th["accent"])
         frame = draw_scene(frame, sc, th, lt, sc["dur"] if idx < len(scenes) - 1 else sc["dur"] + 1)
         proc.stdin.write(frame.convert("RGB").tobytes())
