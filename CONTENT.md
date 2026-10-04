@@ -1,7 +1,8 @@
 # Zasady postów synctech.pl
 
 ## Kanały i harmonogram
-- Jeden post dziennie o **10:00 (Europe/Warsaw)**.
+- Jedna publikacja dziennie o **10:00 (Europe/Warsaw)**.
+- Układ tygodnia: **post (grafika)** w poniedziałek, środę, piątek i sobotę; **rolka (wideo)** we wtorek, czwartek i niedzielę.
 - Publikacja jednocześnie na **Instagram** i **Facebook**, przez Metricool, marka „SyncTech.pl” (brandId `7240380`).
 - Facebook: **wyłącznie firmowa strona SyncTech.pl** (facebookData `1012521311954593`). Nigdy profil prywatny. Jeśli w Metricool pojawi się inne konto Facebook, nie publikuj tam.
 
@@ -24,8 +25,15 @@ synctech.pl to usługi IT i e-commerce: integracje BaseLinker, ShopGold, Shopify
 6. Subiekt GT i magazyn: stany, faktury, synchronizacja
 7. Oferta / jak pracujemy (konsultacja, wdrożenie, wsparcie)
 
-## Grafika
-Generator: `python3 brand/make_post.py spec.json posts/RRRR-MM-DD.jpg` (opis formatu w pliku). Naprzemiennie `light` i `dark`. Nagłówek krótki (max ~13 znaków w linii, 2–3 linie + akcent). Zawsze obejrzyj gotowy obraz przed publikacją.
+## Styl wizualny
+Zawsze **jasny motyw** (`"variant": "light"`), właściciel nie chce ciemnych grafik. Logo musi być wyraźne.
+
+## Grafika (post)
+Generator: `python3 brand/make_post.py spec.json posts/RRRR-MM-DD.jpg` (opis formatu w pliku). Zawsze `light`. Nagłówek krótki (max ~13 znaków w linii, 2–3 linie + akcent). Zawsze obejrzyj gotowy obraz przed publikacją.
+
+## Rolka (reel)
+Generator: `python3 brand/make_reel.py spec.json posts/RRRR-MM-DD-reel.mp4` (opis formatu w pliku). 4–6 plansz, łącznie 12–20 s, pierwsza plansza to mocny hak (pytanie lub obietnica), ostatnia ma CTA `synctech.pl`. Bez emoji w tekście plansz. Sprawdź 3 klatki (ffmpeg -ss … -frames:v 1) przed publikacją.
+Publikacja: Instagram `instagramData {type: REEL, showReelOnFeed: true}`, Facebook `facebookData {type: REEL}`.
 
 ## Dziennik
 Każdy opublikowany post dopisz do `log.md` (data, numer tematu z rotacji, nagłówek). Przed pisaniem nowego posta przeczytaj ostatnie 14 wpisów, żeby nie powtarzać tematów ani nagłówków.
