@@ -1,0 +1,93 @@
+{
+ "platform": "tiktok",
+ "eyebrow": "SyncTech.pl",
+ "scenes": [
+  {
+   "dur": 2.4,
+   "top": 560,
+   "size": 124,
+   "lines": [
+    "Sklep działa."
+   ],
+   "accent": "Ale czy wygląda?"
+  },
+  {
+   "dur": 4.8,
+   "size": 96,
+   "lines": [
+    "Co robimy"
+   ],
+   "accent": "w SyncTech:",
+   "viz": "checklist",
+   "items": [
+    [
+     "Integracje SellAsist i ShopGold",
+     "zamówienia, stany i wysyłki"
+    ],
+    [
+     "Modyfikacje szablonów",
+     "sklep dopasowany do marki"
+    ],
+    [
+     "Szablony e-mail i newslettery",
+     "spójne z wyglądem sklepu"
+    ],
+    [
+     "Banery i projekty graficzne",
+     "strona główna i kampanie"
+    ],
+    [
+     "Stanowiska pakowania i sieci",
+     "sprzęt gotowy do pracy"
+    ]
+   ]
+  },
+  {
+   "dur": 4.2,
+   "size": 96,
+   "lines": [
+    "SellAsist, ShopGold"
+   ],
+   "accent": "i marketplace'y.",
+   "viz": "integrations",
+   "logos": [
+    "sellasist",
+    "shopgold",
+    "allegro",
+    "kaufland",
+    "dpd"
+   ]
+  },
+  {
+   "dur": 4.2,
+   "size": 96,
+   "lines": [
+    "Newsletter, który"
+   ],
+   "accent": "wygląda jak sklep.",
+   "viz": "email",
+   "email": {
+    "from": "Twój Sklep",
+    "subject": "Nowa kolekcja jest już w sklepie",
+    "kicker": "Nowość",
+    "hero": "Jesienna kolekcja już jest",
+    "button": "Zobacz kolekcję",
+    "tiles": [
+     "Nowość",
+     "Bestseller",
+     "Polecane"
+    ]
+   }
+  },
+  {
+   "dur": 3.2,
+   "top": 580,
+   "size": 112,
+   "lines": [
+    "Jeden partner"
+   ],
+   "accent": "od e-commerce.",
+   "cta": "synctech.pl"
+  }
+ ]
+}
