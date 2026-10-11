@@ -1,0 +1,30 @@
+{
+ "layout": "compare",
+ "eyebrow": "Wysyłki",
+ "lines": [
+  "Etykieta kuriera:",
+  "ręcznie czy"
+ ],
+ "accent": "z automatu?",
+ "logos": [
+  "allegro",
+  "dpd",
+  "dhl"
+ ],
+ "left": {
+  "title": "Ręcznie",
+  "items": [
+   "Przepisujesz adres do panelu kuriera",
+   "Numer przesyłki wklejasz sam",
+   "Literówka i paczka wraca"
+  ]
+ },
+ "right": {
+  "title": "Z integracją",
+  "items": [
+   "Etykieta prosto z zamówienia",
+   "Numer wraca do kanału sam",
+   "Adres zawsze z zamówienia"
+  ]
+ }
+}

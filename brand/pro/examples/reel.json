@@ -1,0 +1,85 @@
+{
+ "eyebrow": "SellAsist",
+ "scenes": [
+  {
+   "dur": 2.8,
+   "top": 560,
+   "size": 132,
+   "lines": [
+    "4 kanały."
+   ],
+   "accent": "4 panele?",
+   "lead": "Allegro, Kaufland, eBay i sklep. Każdy z osobnym logowaniem."
+  },
+  {
+   "dur": 4.4,
+   "lines": [
+    "Jeden panel."
+   ],
+   "accent": "Każdy kanał.",
+   "viz": "integrations",
+   "logos": [
+    "allegro",
+    "kaufland",
+    "ebay",
+    "shopify",
+    "dpd",
+    "dhl"
+   ]
+  },
+  {
+   "dur": 4.4,
+   "size": 104,
+   "lines": [
+    "Etykieta gotowa,",
+    "zanim o niej"
+   ],
+   "accent": "pomyślisz.",
+   "viz": "product",
+   "product": {
+    "app": "Panel zamówień",
+    "title": "Dzisiejsze zamówienia",
+    "rows": [
+     {
+      "logo": "allegro",
+      "title": "Zamówienie #1042",
+      "meta": "Allegro · 2 produkty",
+      "status": "Etykieta gotowa",
+      "tone": "ok",
+      "hl": true
+     },
+     {
+      "logo": "kaufland",
+      "title": "Zamówienie #1043",
+      "meta": "Kaufland · 1 produkt",
+      "status": "Do spakowania",
+      "tone": "wait"
+     },
+     {
+      "logo": "ebay",
+      "title": "Zamówienie #1044",
+      "meta": "eBay · 3 produkty",
+      "status": "Opłacone",
+      "tone": "info"
+     }
+    ],
+    "toast": {
+     "logo": "dpd",
+     "title": "Etykieta DPD utworzona",
+     "text": "Numer przesyłki trafił do Allegro"
+    }
+   }
+  },
+  {
+   "dur": 3.6,
+   "top": 600,
+   "size": 124,
+   "lines": [
+    "Ty pakujesz.",
+    "Reszta dzieje"
+   ],
+   "accent": "się sama.",
+   "cta": "synctech.pl"
+  }
+ ]
+}

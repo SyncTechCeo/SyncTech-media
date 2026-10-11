@@ -1,0 +1,49 @@
+{
+ "layout": "product",
+ "eyebrow": "SellAsist · Wysyłki",
+ "lines": [
+  "Etykieta gotowa,",
+  "zanim o niej"
+ ],
+ "accent": "pomyślisz.",
+ "product": {
+  "app": "Panel zamówień",
+  "title": "Dzisiejsze zamówienia",
+  "rows": [
+   {
+    "logo": "allegro",
+    "title": "Zamówienie #1042",
+    "meta": "Allegro · 2 produkty",
+    "status": "Etykieta gotowa",
+    "tone": "ok",
+    "hl": true
+   },
+   {
+    "logo": "kaufland",
+    "title": "Zamówienie #1043",
+    "meta": "Kaufland · 1 produkt",
+    "status": "Do spakowania",
+    "tone": "wait"
+   },
+   {
+    "logo": "ebay",
+    "title": "Zamówienie #1044",
+    "meta": "eBay · 3 produkty",
+    "status": "Opłacone",
+    "tone": "info"
+   },
+   {
+    "logo": "shopify",
+    "title": "Zamówienie #1045",
+    "meta": "Sklep · 1 produkt",
+    "status": "Wysłane",
+    "tone": "done"
+   }
+  ],
+  "toast": {
+   "logo": "dpd",
+   "title": "Etykieta DPD utworzona",
+   "text": "Numer przesyłki trafił do Allegro"
+  }
+ }
+}

@@ -1,6 +1,0 @@
-{"scenes":[
- {"type":"text","dur":3.0,"kicker":"Wielokanałowo","lines":["Allegro, Kaufland,","eBay i sklep."],"accent":"Cztery panele?"},
- {"type":"hub","dur":4.8,"lines":["Jeden panel."],"accent":"Wszystkie kanały.","logos":["allegro","kaufland","ebay","shopify","dhl"]},
- {"type":"logo","dur":3.2,"logo":"dpd","lines":["Etykieta"],"accent":"z poziomu zamówienia","sub":["bez przepisywania adresu"]},
- {"type":"text","dur":3.5,"lines":["Ty sprzedajesz."],"accent":"Reszta dzieje się sama.","cta":"synctech.pl"}
-]}
