@@ -46,14 +46,23 @@ Od 2026-10-06 obowiązuje ta lista; pierwsza publikacja 06.10 to temat 1. W log.
 11. Marketing i analityka sklepu (GA4, Pixel / Conversions API, Google Ads, SEO i szybkość)
 12. Oferta / jak pracujemy (bezpłatna konsultacja 30 min, audyt, wdrożenie, testy, wsparcie)
 
-## Styl wizualny
-Zawsze **jasny motyw** (`"variant": "light"`), właściciel nie chce ciemnych grafik. Logo musi być wyraźne.
+## Styl wizualny (od 2026-10-12: SyncTech Studio „pro”)
+Zawsze **jasny motyw**, właściciel nie chce ciemnych grafik. Poziom „jak duże marki SaaS”: dużo powietrza, mocna typografia, **oryginalne logotypy platform** (wektorowe, w kolorach marek), makiety interfejsu zamiast samego tekstu. Stary generator (`make_post.py`, `make_reel.py`) nie jest już używany.
+
+Generator (jeden dla postów i rolek): `python3 brand/pro/render.py spec.json posts/RRRR-MM-DD.jpg` lub `... posts/RRRR-MM-DD-reel.mp4`. Pełny opis pól: `brand/pro/README.md`, wzory: `brand/pro/examples/`.
+
+**Układy** (`layout` w poście, `viz` w scenie rolki): `integrations` (SyncTech w środku + połączone logotypy), `product` (makieta panelu zamówień z powiadomieniem), `checklist` (numerowana lista z logotypami), `compare` (ręcznie vs z integracją), `myth` (mit vs fakt).
+- **Rotacja układów:** nie używaj tego samego układu w postach dwa razy z rzędu ani tego samego `viz` w rolce dwa dni z rzędu. Dobieraj układ do tematu (np. mit → `myth`, checklista → `checklist`, wysyłki/zamówienia → `product`, wielokanałowość → `integrations`). Zapisuj użyty układ w log.md (kolumna Wariant).
+- **Logotypy:** używaj tylko tych, które pasują do treści (np. Allegro/Kaufland/eBay przy marketplace'ach, DPD/DHL przy wysyłkach). Dostępne pliki: `brand/logos/svg/*.svg` i `brand/logos/*.png`. Brakujące (SellAsist, ShopGold, InPost, Empik, Amazon, BaseLinker…) generator pokazuje jako kartę z nazwą. **Nigdy nie rysuj ani nie podrabiaj logo samodzielnie.**
+- **Nagłówek:** każda pozycja w `lines` to jedna linia na grafice (max ~18 znaków), `accent` to ostatnia linia w gradiencie marki, najlepiej 1–3 słowa. Długie zdania dziel na kilka linii, bo inaczej generator zmniejsza czcionkę.
+- `eyebrow`: krótka etykieta tematu, np. „SellAsist · Wysyłki”, „ShopGold · Promocje”, „Checklista”, „Mit vs fakt”.
+- **Makieta `product`:** nazwy okien ogólne („Panel zamówień”), numery zamówień tylko jako przykład w interfejsie. Bez nazwisk, kwot i wyników udających prawdziwe dane.
 
 ## Grafika (post)
-Generator: `python3 brand/make_post.py spec.json posts/RRRR-MM-DD.jpg` (opis formatu w pliku). Zawsze `light`. Nagłówek krótki (max ~13 znaków w linii, 2–3 linie + akcent). Zawsze obejrzyj gotowy obraz przed publikacją.
+1080x1350 przez `brand/pro/render.py` → `posts/RRRR-MM-DD.jpg`. Zawsze obejrzyj gotowy obraz (Read) przed publikacją: nic nie może nachodzić na siebie ani wychodzić poza kadr.
 
 ## Rolka (reel)
-Generator: `python3 brand/make_reel.py spec.json posts/RRRR-MM-DD-reel.mp4` (opis formatu w pliku). 4–6 plansz, łącznie 12–20 s, pierwsza plansza to mocny hak (pytanie lub obietnica), ostatnia ma CTA `synctech.pl`. Bez emoji w tekście plansz. Sprawdź 3 klatki (ffmpeg -ss … -frames:v 1) przed publikacją.
+1080x1920 przez `brand/pro/render.py` → `posts/RRRR-MM-DD-reel.mp4` (render ok. 1 min). 4–5 scen, łącznie 14–18 s. Pierwsza scena to mocny hak (sam tekst, duży `size` ok. 130, `top` ok. 560), środkowe sceny mają `viz` (min. 2 różne układy), ostatnia ma `cta: "synctech.pl"`. Bez emoji w tekście scen. Sprawdź min. 3 klatki (ffmpeg -ss … -frames:v 1) przed publikacją. Okładka: `videoCoverMilliseconds` 2000.
 Publikacja: Instagram `instagramData {type: REEL, showReelOnFeed: true}`, Facebook `facebookData {type: REEL}`.
 
 ## Dziennik
