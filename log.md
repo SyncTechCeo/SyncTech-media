@@ -10,3 +10,4 @@
 | 2026-10-08 | 3 – Problem → rozwiązanie: sprzedaż wielokanałowa (rolka) | Allegro. Amazon. Kaufland. I trzy panele? | light, reel, posts/2026-10-08-reel.mp4 (10:00) |
 | 2026-10-09 | 4 – ShopGold: hurtownie i dropshipping (post) | Hurtownia w sklepie bez Excela. | light, post, posts/2026-10-09.jpg (10:00) |
 | 2026-10-10 | 5 – Mit lub błąd w e-commerce (post) | Mit: integrację ustawiasz raz i zapominasz. | light, post, posts/2026-10-10.jpg (10:00) |
+| 2026-10-11 | 6 – SellAsist: marketplace'y i wysyłki (rolka) | Zamówienie z Allegro. Ile kliknięć do paczki? | light, reel, posts/2026-10-11-reel.mp4 (10:00) |
