@@ -21,6 +21,7 @@ python3 brand/pro/render.py spec.json posts/RRRR-MM-DD-reel.mp4   # rolka 1080x1
 - `checklist`: `items[]` jako tekst lub `[tytuł, dopisek]` (3–6), logotypy nad listą.
 - `compare`: `left/right {title, items[]}` (ręcznie vs z integracją).
 - `myth`: `myth`, `fact`, `factSub`.
+- `email`: makieta newslettera: `email {from, subject, time, kicker, hero, heroSub, button, tiles[3], badges[0-2]}`.
 
 ## Rolka
 `{"eyebrow": "...", "platform": "tiktok" (opcjonalnie: większy prawy margines pod pasek ikon TikToka), "scenes": [ {dur, lines, accent, size, top, kicker, lead, viz, cta, ...pola układu} ]}`. 4–5 scen, 14–18 s. `viz` = nazwa układu (`integrations`, `product`, `checklist`, `compare`, `myth`). Ostatnia scena: `cta: "synctech.pl"`.

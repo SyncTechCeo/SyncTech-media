@@ -16,7 +16,13 @@ Usługi (ze strony): wdrożenia platform od zera, integracje marketplace'ów (Al
 
 **ShopGold** (synctech.pl/platformy/shopgold): wdrożenia i migracje na ShopGold (z Shoper, PrestaShop, WooCommerce); integracje z hurtowniami i dropshipping (natywny moduł pobiera ofertę, ceny, stany i zdjęcia); system promocji bez kodowania (progi rabatowe, kupony jednorazowe, promocje czasowe, programy lojalnościowe, gratisy); backend dla dużych katalogów (masowe edycje, importy CSV, synchronizacja stanów co X minut, alerty, raporty); synchronizacja z BaseLinker, Allegro, Amazon; SEO i szybkość sklepu; integracje marketingowe.
 
-**Usługi kreatywne i WWW** (podane przez właściciela, 2026-10): tworzenie stron internetowych, grafiki produktowe dla sklepów i marketplace'ów, modyfikacje szablonów sklepów internetowych (wygląd, układ, dopasowanie do marki). Pisz o nich ogólnie i praktycznie (np. co wpływa na czytelność karty produktu, kiedy warto zmodyfikować szablon zamiast budować sklep od nowa), bez wymyślonych realizacji, portfolio i wyników.
+**Usługi kreatywne i WWW** (podane przez właściciela, 2026-10):
+- **modyfikacje szablonów sklepów** (wygląd, układ, dopasowanie do marki, poprawki szablonu zamiast budowy sklepu od zera),
+- **profesjonalne szablony e-mail i newsletterów** (maile transakcyjne i marketingowe spójne z wyglądem sklepu),
+- **banery i projekty graficzne** (banery na stronę główną i kampanie, grafiki na marketplace'y i social media),
+- tworzenie stron internetowych.
+**Infrastruktura na życzenie** (podane przez właściciela, 2026-10-11): stawiamy sieci komputerowe, przygotowujemy stanowiska komputerowe gotowe do pracy oraz **stanowiska do pakowania przesyłek** (sprzęt, drukarki etykiet, skanery, ergonomia i ułożenie pod szybkie pakowanie), żeby jak najbardziej podnieść wydajność sklepu i magazynu. Pisz praktycznie (np. co przyspiesza pakowanie, co sprawdzić w sieci biura/magazynu), bez wymyślonych wyników i liczb.
+Grafik i zdjęć produktowych na razie NIE promuj (decyzja właściciela z 2026-10-11). Pisz o usługach ogólnie i praktycznie, bez wymyślonych realizacji, portfolio i wyników.
 
 Jak pracujemy: 1) bezpłatna konsultacja 30 min, 2) audyt i plan (pisemny raport z priorytetami), 3) wdrożenie etapami, 4) testy end-to-end i dokumentacja, 5) stałe wsparcie. Materiał do polecania: checklista „25 integracji e-commerce 2026” (PDF na stronie), blog synctech.pl/blog.
 
@@ -34,7 +40,7 @@ Jak pracujemy: 1) bezpłatna konsultacja 30 min, 2) audyt i plan (pisemny raport
 - Zmieniaj odbiorcę: sklep startujący, sklep migrujący, sprzedawca na marketplace'ach, sklep z dropshippingiem, sklep z dużym katalogiem, producent B2B.
 
 ## Rotacja tematów (po kolei, potem od nowa)
-Od 2026-10-06 obowiązuje ta lista; pierwsza publikacja 06.10 to temat 1. Temat 13 dodany 2026-10-11 (po 12 idzie 13, potem znowu 1). W log.md zapisuj numer z tej listy.
+Od 2026-10-06 obowiązuje ta lista; pierwsza publikacja 06.10 to temat 1. Tematy 13–16 dodane 2026-10-11 (po 12 idą 13–16, potem znowu 1). W log.md zapisuj numer z tej listy.
 1. SellAsist: automatyzacja ofert (wystawianie/zdejmowanie, repricing, rezerwacja stanu)
 2. ShopGold: promocje bez kodowania (progi rabatowe, kupony, promocje czasowe, lojalność, gratisy)
 3. Problem → rozwiązanie: sprzedaż wielokanałowa (overselling, kategorie, ręczne zamówienia)
@@ -47,14 +53,17 @@ Od 2026-10-06 obowiązuje ta lista; pierwsza publikacja 06.10 to temat 1. Temat 
 10. SellAsist: raporty, marża i wielomagazynowość
 11. Marketing i analityka sklepu (GA4, Pixel / Conversions API, Google Ads, SEO i szybkość)
 12. Oferta / jak pracujemy (bezpłatna konsultacja 30 min, audyt, wdrożenie, testy, wsparcie)
-13. Strony internetowe, grafiki produktowe i modyfikacje szablonów sklepów (np. dobre zdjęcia i grafiki na kartę produktu i Allegro, szablon sklepu dopasowany do marki, kiedy nowa strona, a kiedy poprawki)
+13. Modyfikacje szablonów sklepów (ShopGold i inne platformy: kiedy przerobić szablon zamiast budować sklep od nowa, spójność z marką, co poprawić najpierw)
+14. Szablony e-mail i newslettery (maile transakcyjne i newsletter spójne ze sklepem, czytelność na telefonie, jeden jasny przycisk)
+15. Banery i projekty graficzne (banery na stronę główną i kampanie, grafiki na marketplace'y, spójny wygląd marki)
+16. Biuro i magazyn: sieci komputerowe, stanowiska gotowe do pracy, stanowiska do pakowania przesyłek (wydajność, drukarka etykiet, skaner, ergonomia)
 
 ## Styl wizualny (od 2026-10-12: SyncTech Studio „pro”)
 Zawsze **jasny motyw**, właściciel nie chce ciemnych grafik. Poziom „jak duże marki SaaS”: dużo powietrza, mocna typografia, **oryginalne logotypy platform** (wektorowe, w kolorach marek), makiety interfejsu zamiast samego tekstu. Stary generator (`make_post.py`, `make_reel.py`) nie jest już używany.
 
 Generator (jeden dla postów i rolek): `python3 brand/pro/render.py spec.json posts/RRRR-MM-DD.jpg` lub `... posts/RRRR-MM-DD-reel.mp4`. Pełny opis pól: `brand/pro/README.md`, wzory: `brand/pro/examples/`.
 
-**Układy** (`layout` w poście, `viz` w scenie rolki): `integrations` (SyncTech w środku + połączone logotypy), `product` (makieta panelu zamówień z powiadomieniem), `checklist` (numerowana lista z logotypami), `compare` (ręcznie vs z integracją), `myth` (mit vs fakt).
+**Układy** (`layout` w poście, `viz` w scenie rolki): `integrations` (SyncTech w środku + połączone logotypy), `product` (makieta panelu zamówień z powiadomieniem), `email` (makieta newslettera w skrzynce pocztowej, do tematów 14–15), `checklist` (numerowana lista z logotypami), `compare` (ręcznie vs z integracją), `myth` (mit vs fakt).
 - **Rotacja układów:** nie używaj tego samego układu w postach dwa razy z rzędu ani tego samego `viz` w rolce dwa dni z rzędu. Dobieraj układ do tematu (np. mit → `myth`, checklista → `checklist`, wysyłki/zamówienia → `product`, wielokanałowość → `integrations`). Zapisuj użyty układ w log.md (kolumna Wariant).
 - **Logotypy:** używaj tylko tych, które pasują do treści (np. Allegro/Kaufland/eBay przy marketplace'ach, DPD/DHL przy wysyłkach). Dostępne pliki: `brand/logos/svg/*.svg` i `brand/logos/*.png`. Brakujące (SellAsist, ShopGold, InPost, Empik, Amazon, BaseLinker…) generator pokazuje jako kartę z nazwą. **Nigdy nie rysuj ani nie podrabiaj logo samodzielnie.**
 - **Nagłówek:** każda pozycja w `lines` to jedna linia na grafice (max ~18 znaków), `accent` to ostatnia linia w gradiencie marki, najlepiej 1–3 słowa. Długie zdania dziel na kilka linii, bo inaczej generator zmniejsza czcionkę.

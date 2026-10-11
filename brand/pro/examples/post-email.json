@@ -1,0 +1,6 @@
+{"layout":"email","eyebrow":"E-mail · Newsletter",
+ "lines":["Newsletter, który"],"accent":"wygląda jak Twój sklep.",
+ "email":{"from":"Twój Sklep","subject":"Nowa kolekcja jest już w sklepie","time":"10:00",
+   "kicker":"Nowość","hero":"Jesienna kolekcja już jest","heroSub":"Te same kolory, fonty i styl co w Twoim sklepie.","button":"Zobacz kolekcję",
+   "tiles":["Nowość","Bestseller","Polecane"],
+   "badges":["Czytelny na telefonie","Jeden jasny przycisk"]}}
