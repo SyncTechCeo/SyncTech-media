@@ -16,6 +16,8 @@ Usługi (ze strony): wdrożenia platform od zera, integracje marketplace'ów (Al
 
 **ShopGold** (synctech.pl/platformy/shopgold): wdrożenia i migracje na ShopGold (z Shoper, PrestaShop, WooCommerce); integracje z hurtowniami i dropshipping (natywny moduł pobiera ofertę, ceny, stany i zdjęcia); system promocji bez kodowania (progi rabatowe, kupony jednorazowe, promocje czasowe, programy lojalnościowe, gratisy); backend dla dużych katalogów (masowe edycje, importy CSV, synchronizacja stanów co X minut, alerty, raporty); synchronizacja z BaseLinker, Allegro, Amazon; SEO i szybkość sklepu; integracje marketingowe.
 
+**Usługi kreatywne i WWW** (podane przez właściciela, 2026-10): tworzenie stron internetowych, grafiki produktowe dla sklepów i marketplace'ów, modyfikacje szablonów sklepów internetowych (wygląd, układ, dopasowanie do marki). Pisz o nich ogólnie i praktycznie (np. co wpływa na czytelność karty produktu, kiedy warto zmodyfikować szablon zamiast budować sklep od nowa), bez wymyślonych realizacji, portfolio i wyników.
+
 Jak pracujemy: 1) bezpłatna konsultacja 30 min, 2) audyt i plan (pisemny raport z priorytetami), 3) wdrożenie etapami, 4) testy end-to-end i dokumentacja, 5) stałe wsparcie. Materiał do polecania: checklista „25 integracji e-commerce 2026” (PDF na stronie), blog synctech.pl/blog.
 
 ## Ton
@@ -32,7 +34,7 @@ Jak pracujemy: 1) bezpłatna konsultacja 30 min, 2) audyt i plan (pisemny raport
 - Zmieniaj odbiorcę: sklep startujący, sklep migrujący, sprzedawca na marketplace'ach, sklep z dropshippingiem, sklep z dużym katalogiem, producent B2B.
 
 ## Rotacja tematów (po kolei, potem od nowa)
-Od 2026-10-06 obowiązuje ta lista; pierwsza publikacja 06.10 to temat 1. W log.md zapisuj numer z tej listy.
+Od 2026-10-06 obowiązuje ta lista; pierwsza publikacja 06.10 to temat 1. Temat 13 dodany 2026-10-11 (po 12 idzie 13, potem znowu 1). W log.md zapisuj numer z tej listy.
 1. SellAsist: automatyzacja ofert (wystawianie/zdejmowanie, repricing, rezerwacja stanu)
 2. ShopGold: promocje bez kodowania (progi rabatowe, kupony, promocje czasowe, lojalność, gratisy)
 3. Problem → rozwiązanie: sprzedaż wielokanałowa (overselling, kategorie, ręczne zamówienia)
@@ -45,6 +47,7 @@ Od 2026-10-06 obowiązuje ta lista; pierwsza publikacja 06.10 to temat 1. W log.
 10. SellAsist: raporty, marża i wielomagazynowość
 11. Marketing i analityka sklepu (GA4, Pixel / Conversions API, Google Ads, SEO i szybkość)
 12. Oferta / jak pracujemy (bezpłatna konsultacja 30 min, audyt, wdrożenie, testy, wsparcie)
+13. Strony internetowe, grafiki produktowe i modyfikacje szablonów sklepów (np. dobre zdjęcia i grafiki na kartę produktu i Allegro, szablon sklepu dopasowany do marki, kiedy nowa strona, a kiedy poprawki)
 
 ## Styl wizualny (od 2026-10-12: SyncTech Studio „pro”)
 Zawsze **jasny motyw**, właściciel nie chce ciemnych grafik. Poziom „jak duże marki SaaS”: dużo powietrza, mocna typografia, **oryginalne logotypy platform** (wektorowe, w kolorach marek), makiety interfejsu zamiast samego tekstu. Stary generator (`make_post.py`, `make_reel.py`) nie jest już używany.
