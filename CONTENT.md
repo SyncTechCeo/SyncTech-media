@@ -77,5 +77,12 @@ Generator (jeden dla postów i rolek): `python3 brand/pro/render.py spec.json po
 1080x1920 przez `brand/pro/render.py` → `posts/RRRR-MM-DD-reel.mp4` (render ok. 1 min). 4–5 scen, łącznie 14–18 s. Pierwsza scena to mocny hak (sam tekst, duży `size` ok. 130, `top` ok. 560), środkowe sceny mają `viz` (min. 2 różne układy), ostatnia ma `cta: "synctech.pl"`. Bez emoji w tekście scen. Sprawdź min. 3 klatki (ffmpeg -ss … -frames:v 1) przed publikacją. Okładka: `videoCoverMilliseconds` 2000.
 Publikacja: Instagram `instagramData {type: REEL, showReelOnFeed: true}`, Facebook `facebookData {type: REEL}`.
 
+## TikTok (od 2026-10-11)
+- **Harmonogram:** rolka na TikToku we **wtorek, czwartek i niedzielę o 18:00** (Europe/Warsaw), konto TikTok „SyncTech.pl” w tej samej marce Metricool.
+- **Akceptacja dzień wcześniej (wymóg właściciela):** rolkę przygotowuje osobne zadanie w przeddzień (pon/śr/sob ok. 17:45) i wysyła ją **do akceptacji**, nie publikuje sama. Najpierw `createScheduledPostForReview` (recenzent kontakt@synctech.pl, approvalSystem "any"); jeśli plan Metricool nie obsługuje akceptacji, zapis jako **szkic** (`draft: true`) na jutro 18:00. Do tego powiadomienie z podglądem i linkiem do Metricool.
+- **Treść:** osobna rotacja, dziennik w `log-tiktok.md` (NIE w log.md). Tematy z tej samej listy, z naciskiem na usługi (13–16) i SellAsist/ShopGold, różne od rolki IG z tego samego dnia i od ostatnich 3 TikToków.
+- **Forma:** `"platform": "tiktok"` w spec (większy prawy margines pod przyciski TikToka), 4–5 scen, 14–20 s, hak w pierwszej scenie (pytanie albo zaskoczenie, max ~2,5 s), ostatnia scena z cta „synctech.pl”. Wzór: `brand/pro/examples/tiktok.json`.
+- **Opis:** krótki (do ~300 znaków), luźniejszy niż na IG, kończy się „→ link w bio”, 5–8 hashtagów. `tiktokData.title` wymagany (= hak). `commercialContentOwnBrand: true`, `privacyOption: PUBLIC_TO_EVERYONE`, `videoCoverMilliseconds: 2000`.
+
 ## Dziennik
 Każdy opublikowany post dopisz do `log.md` (data, numer tematu z rotacji, nagłówek). Przed pisaniem nowego posta przeczytaj ostatnie 14 wpisów, żeby nie powtarzać tematów ani nagłówków.
