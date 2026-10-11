@@ -23,6 +23,6 @@ python3 brand/pro/render.py spec.json posts/RRRR-MM-DD-reel.mp4   # rolka 1080x1
 - `myth`: `myth`, `fact`, `factSub`.
 
 ## Rolka
-`{"eyebrow": "...", "scenes": [ {dur, lines, accent, size, top, kicker, lead, viz, cta, ...pola układu} ]}`. 4–5 scen, 14–18 s. `viz` = nazwa układu (`integrations`, `product`, `checklist`, `compare`, `myth`). Ostatnia scena: `cta: "synctech.pl"`.
+`{"eyebrow": "...", "platform": "tiktok" (opcjonalnie: większy prawy margines pod pasek ikon TikToka), "scenes": [ {dur, lines, accent, size, top, kicker, lead, viz, cta, ...pola układu} ]}`. 4–5 scen, 14–18 s. `viz` = nazwa układu (`integrations`, `product`, `checklist`, `compare`, `myth`). Ostatnia scena: `cta: "synctech.pl"`.
 
 Przykłady: `brand/pro/examples/`, gotowe próbki: `brand/samples/pro-*`.

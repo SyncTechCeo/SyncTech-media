@@ -1,0 +1,9 @@
+{"platform":"tiktok","eyebrow":"Grafiki produktowe","scenes":[
+ {"dur":2.4,"top":560,"size":124,"lines":["Twoje zdjęcia","sprzedają…"],"accent":"czy odstraszają?"},
+ {"dur":4.6,"size":104,"lines":["Karta produktu:"],"accent":"przed i po.","viz":"compare",
+  "left":{"title":"Przed","items":["Produkt na tle kuchni","Brak wymiarów","Jedno ujęcie"]},
+  "right":{"title":"Po","items":["Czyste, jasne tło","Infografika z wymiarami","Kilka ujęć i detale"]}},
+ {"dur":4.6,"size":104,"lines":["3 grafiki,"],"accent":"które musisz mieć","viz":"checklist",
+  "items":[["Packshot na białym tle","pierwsze zdjęcie w ofercie"],["Infografika z wymiarami","mniej pytań od klientów"],["Produkt w użyciu","klient widzi skalę i efekt"]]},
+ {"dur":3.4,"top":540,"size":112,"lines":["Grafiki, strony","i szablony"],"accent":"sklepów robimy my.","cta":"synctech.pl"}
+]}
