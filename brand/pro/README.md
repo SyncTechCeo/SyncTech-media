@@ -27,3 +27,6 @@ python3 brand/pro/render.py spec.json posts/RRRR-MM-DD-reel.mp4   # rolka 1080x1
 `{"eyebrow": "...", "platform": "tiktok" (opcjonalnie: większy prawy margines pod pasek ikon TikToka), "scenes": [ {dur, lines, accent, size, top, kicker, lead, viz, cta, ...pola układu} ]}`. 4–5 scen, 14–18 s. `viz` = nazwa układu (`integrations`, `product`, `checklist`, `compare`, `myth`). Ostatnia scena: `cta: "synctech.pl"`.
 
 Przykłady: `brand/pro/examples/`, gotowe próbki: `brand/samples/pro-*`.
+
+## Okładka rolki
+Ten sam spec rolki + wyjście `.jpg` = okładka 1080x1920 z treścią w strefie siatki profilu 3:4 (y 240–1680). Opcjonalne pole `cover {lines, accent, sub, logos, series, eyebrow}`; domyślnie hak z 1. sceny i logotypy z rolki.

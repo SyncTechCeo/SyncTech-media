@@ -169,6 +169,13 @@ svg.wires{position:absolute;inset:0;overflow:visible}
 .badge{position:absolute;display:inline-flex;align-items:center;gap:10px;height:54px;padding:0 22px;border-radius:999px;background:#fff;box-shadow:var(--sh-2);border:1px solid rgba(14,31,28,.07);font:600 20px/1 "Inter";color:var(--ink)}
 .badge i{width:12px;height:12px;border-radius:50%;background:var(--t300);box-shadow:0 0 0 5px rgba(106,211,192,.25)}
 
+
+/* ---------- okładka rolki (siatka profilu 3:4) ---------- */
+.cov-h1{font-size:150px}
+.cov-sub{font:500 40px/1.3 "Inter";color:var(--ink2);letter-spacing:-.01em}
+.cov-series{display:inline-flex;align-items:center;gap:14px;height:64px;padding:0 28px;border-radius:999px;background:var(--ink);color:#fff;font:600 28px/1 "Inter";letter-spacing:.02em}
+.cov-series i{width:12px;height:12px;border-radius:50%;background:var(--t300);box-shadow:0 0 0 6px rgba(106,211,192,.3)}
+
 /* ---------- rolka ---------- */
 .scene{position:absolute;inset:0}
 .prog{position:absolute;left:var(--m);right:var(--m);height:6px;border-radius:6px;background:rgba(14,31,28,.08);z-index:6;overflow:hidden}
@@ -197,7 +204,7 @@ const SPEC = window.SPEC || {};
 const LOGOS = window.LOGOS || {};       // slug -> data URI svg/png
 const NAMES = window.NAMES || {};
 const BRAND = window.BRAND || {};       // logo, mark
-const W = SPEC.format === "reel" ? 1080 : 1080, H = SPEC.format === "reel" ? 1920 : 1350;
+const W = 1080, H = (SPEC.format === "reel" || SPEC.format === "cover") ? 1920 : 1350;
 const M = 84;
 const R = SPEC.platform === "tiktok" ? 170 : M;   // prawy margines (TikTok: pasek ikon po prawej)
 const C = document.getElementById("canvas");
@@ -431,9 +438,34 @@ function seek(sec) {
   });
 }
 
+
+/* ---- OKŁADKA ROLKI 1080x1920, treść w strefie siatki 3:4 (y 240–1680) ---- */
+function buildCover() {
+  const cv = SPEC.cover || {};
+  const first = (SPEC.scenes || [])[0] || {};
+  const c = {lines: cv.lines || first.lines || [], accent: cv.accent ?? first.accent};
+  bg(C);
+  topbar(C, 300, cv.eyebrow || SPEC.eyebrow);
+  const h = headline(C, c, M, 450, W - 2 * M, cv.size || 150);
+  let y = 450 + h.getBoundingClientRect().height + 36;
+  if (cv.sub) { const p = el("p", "cov-sub", nbsp(cv.sub)); p.style.cssText = `position:absolute;left:${M}px;top:${y}px;width:${W - 2 * M - 40}px`; C.appendChild(p); y += p.getBoundingClientRect().height + 30; }
+  const logos = cv.logos || (SPEC.scenes || []).flatMap(z => z.logos || []).filter((v, i, a) => a.indexOf(v) === i).slice(0, 5);
+  const bottom = 1560;
+  if (logos.length >= 3) {
+    const box = {x: M, y: y + 10, w: W - 2 * M, h: Math.max(420, bottom - 110 - y)};
+    const saved = SPEC.format; SPEC.format = "post";
+    vizIntegrations(C, {logos}, box, 0);
+    SPEC.format = saved;
+  } else if (logos.length) {
+    stack(C, logos, M, y + 20, 0);
+  }
+  const tag = el("div", "cov-series", `<i></i>${esc(cv.series || "synctech.pl")}`);
+  tag.style.cssText = `position:absolute;left:${M}px;top:${bottom}px`; C.appendChild(tag);
+}
+
 function freeze() { document.getAnimations().forEach(a => { a.pause(); a.currentTime = 6000; }); }
 
-window.build = () => { if (SPEC.format === "reel") buildReel(); else { buildPost(); freeze(); } };
+window.build = () => { if (SPEC.format === "cover") { buildCover(); freeze(); } else if (SPEC.format === "reel") buildReel(); else { buildPost(); freeze(); } };
 window.seek = seek;
 </script>
 </body>

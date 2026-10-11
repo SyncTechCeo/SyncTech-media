@@ -3,6 +3,7 @@
 Użycie:
     python3 brand/pro/render.py spec.json posts/RRRR-MM-DD.jpg        # post 1080x1350
     python3 brand/pro/render.py spec.json posts/RRRR-MM-DD-reel.mp4   # rolka 1080x1920, 30 fps
+    python3 brand/pro/render.py spec.json posts/RRRR-MM-DD-reel-cover.jpg   # okładka rolki (ten sam spec)
 
 Format spec: patrz brand/pro/README.md (oraz przykłady w brand/pro/examples/).
 """
@@ -50,7 +51,7 @@ def logos():
 
 
 def page_for(p, spec):
-    reel = spec.get("format") == "reel"
+    reel = spec.get("format") in ("reel", "cover")
     w, h = 1080, 1920 if reel else 1350
     b = p.chromium.launch()
     pg = b.new_page(viewport={"width": w, "height": h}, device_scale_factor=1)
@@ -82,6 +83,11 @@ def render(spec, out):
             proc.stdin.close()
             if proc.wait() != 0:
                 raise SystemExit("ffmpeg failed")
+        elif spec.get("scenes"):
+            # spec rolki + wyjście .jpg = okładka rolki (1080x1920, treść w strefie siatki 3:4)
+            spec["format"] = "cover"
+            b, pg, w, h = page_for(p, spec)
+            pg.screenshot(path=out, type="jpeg", quality=95, clip={"x": 0, "y": 0, "width": w, "height": h})
         else:
             spec["format"] = "post"
             b, pg, w, h = page_for(p, spec)
