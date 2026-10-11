@@ -84,5 +84,11 @@ Publikacja: Instagram `instagramData {type: REEL, showReelOnFeed: true}`, Facebo
 - **Forma:** `"platform": "tiktok"` w spec (większy prawy margines pod przyciski TikToka), 4–5 scen, 14–20 s, hak w pierwszej scenie (pytanie albo zaskoczenie, max ~2,5 s), ostatnia scena z cta „synctech.pl”. Wzór: `brand/pro/examples/tiktok.json`.
 - **Opis:** krótki (do ~300 znaków), luźniejszy niż na IG, kończy się „→ link w bio”, 5–8 hashtagów. `tiktokData.title` wymagany (= hak). `commercialContentOwnBrand: true`, `privacyOption: PUBLIC_TO_EVERYONE`, `videoCoverMilliseconds: 2000`.
 
+## Rolki od właściciela (np. z ChatGPT)
+- Właściciel co jakiś czas podsyła gotowe rolki. Są już zaakceptowane, więc nie wysyłaj ich ponownie do akceptacji.
+- Publikuj je jako **dodatkowe** o 18:00 na Instagram (REEL), Facebook (REEL) i TikTok, w najbliższy dzień bez innej publikacji o 18:00 (TikTok z harmonogramu jest wt/czw/niedz o 18:00, więc najlepiej pon/śr/pt/sob).
+- Plik zapisz jako `posts/RRRR-MM-DD-extra-reel.mp4`, wpis w `log.md` i `log-tiktok.md` oznacz słowem „dodatkowy/dodatkowa”, żeby nie blokował porannej publikacji.
+- Opis napisz do treści filmu (zasady tonu jak wyżej), bez zmieniania samego wideo.
+
 ## Dziennik
 Każdy opublikowany post dopisz do `log.md` (data, numer tematu z rotacji, nagłówek). Przed pisaniem nowego posta przeczytaj ostatnie 14 wpisów, żeby nie powtarzać tematów ani nagłówków.
