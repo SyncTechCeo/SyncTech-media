@@ -12,3 +12,4 @@
 | 2026-10-10 | 5 – Mit lub błąd w e-commerce (post) | Mit: integrację ustawiasz raz i zapominasz. | light, post, posts/2026-10-10.jpg (10:00) |
 | 2026-10-11 | 6 – SellAsist: marketplace'y i wysyłki (rolka) | Zamówienie z Allegro. Ile kliknięć do paczki? | light, reel, posts/2026-10-11-reel.mp4 (10:00) |
 | 2026-10-12 | dodatkowy – rolka od właściciela (ChatGPT): proces zamówienie → faktura → etykieta → paczka (18:00) | Jedno zamówienie. Wiele systemów. | reel, posts/2026-10-12-extra-reel.mp4, IG+FB+TikTok |
+| 2026-10-12 | 7 – Checklista / kroki: przygotowanie sklepu przed sezonem Q4 (post) | Przed sezonem Q4 sprawdź to. | pro, post, checklist, posts/2026-10-12.jpg (10:00) |
