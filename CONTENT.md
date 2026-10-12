@@ -1,8 +1,10 @@
 # Zasady postów synctech.pl
 
 ## Kanały i harmonogram
-- Jedna publikacja dziennie o **10:00 (Europe/Warsaw)**.
-- Układ tygodnia: **post (grafika)** w poniedziałek, środę, piątek i sobotę; **rolka (wideo)** we wtorek, czwartek i niedzielę.
+- **Limit Metricool (plan Free): 20 opublikowanych postów w miesiącu kalendarzowym, każda sieć liczy się osobno** (IG + FB = 2). Reset 1. dnia miesiąca. Limit za październik 2026 wyczerpany 12.10, więc do 31.10 nic nie publikujemy automatycznie.
+- **Od 2026-11-01: dwie publikacje tygodniowo o 10:00 (Europe/Warsaw)**, na IG + FB: **wtorek = rolka (wideo)**, **piątek = post (grafika)**. To maks. 10 dni × 2 = 20 w miesiącu (zwykle 16–18).
+- **Budżet:** przed zaplanowaniem policz w log.md publikacje z bieżącego miesiąca (każda sieć osobno, łącznie z dodatkowymi i TikTokiem). Jeśli nowa publikacja przekroczyłaby 20, nie planuj jej.
+- TikTok i rolki dodatkowe tylko z wolnej puli w danym miesiącu (zwykle ostatni tydzień), automatyczne zadanie TikToka jest wstrzymane.
 - Publikacja jednocześnie na **Instagram** i **Facebook**, przez Metricool, marka „SyncTech.pl” (brandId `7240380`).
 - Facebook: **wyłącznie firmowa strona SyncTech.pl** (facebookData `1012521311954593`). Nigdy profil prywatny. Jeśli w Metricool pojawi się inne konto Facebook, nie publikuj tam.
 
@@ -35,7 +37,7 @@ Jak pracujemy: 1) bezpłatna konsultacja 30 min, 2) audyt i plan (pisemny raport
 
 ## Różnorodność (ważne!)
 - Właściciel chce **różnorodnych** tematów. Nie powtarzaj tej samej platformy dwa dni z rzędu ani tego samego kąta (np. „sklep może działać sam”, „3 rzeczy…”) w ciągu 14 dni.
-- W każdym tygodniu min. 2 publikacje o SellAsist i min. 2 o ShopGold.
+- Co tydzień (2 publikacje) staraj się, by min. jedna dotyczyła SellAsist albo ShopGold; w miesiącu min. 2 o każdym z nich.
 - Zmieniaj formę: mini-poradnik krok po kroku, pytanie do odbiorców, mit vs fakt, „zanim…/po…” (hipotetycznie), FAQ, lista błędów, porównanie „kiedy co wybrać”, ciekawostka o funkcji.
 - Zmieniaj odbiorcę: sklep startujący, sklep migrujący, sprzedawca na marketplace'ach, sklep z dropshippingiem, sklep z dużym katalogiem, producent B2B.
 
