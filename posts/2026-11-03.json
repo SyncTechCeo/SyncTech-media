@@ -1,0 +1,27 @@
+{
+ "eyebrow": "ShopGold · Migracja",
+ "note": "Wdrożenia i integracje e-commerce",
+ "scenes": [
+  {"dur": 2.6, "top": 560, "size": 130,
+   "lines": ["Przenosisz sklep"], "accent": "na ShopGold?",
+   "lead": "Zanim zaczniesz, sprawdź, co zabierasz ze sobą."},
+  {"dur": 4.0, "size": 110,
+   "lines": ["Produkty, klienci,"], "accent": "zamówienia.",
+   "lead": "Migracja z **Shoper, PrestaShop i WooCommerce** razem z danymi.",
+   "viz": "integrations",
+   "logos": ["shoper", "prestashop", "woocommerce", "shopgold", "allegro", "baselinker"]},
+  {"dur": 4.2, "size": 110,
+   "lines": ["Duży katalog?"], "accent": "Bez klikania.",
+   "viz": "compare",
+   "left": {"title": "Ręcznie", "items": ["Edycja produkt po produkcie", "Ceny poprawiane w arkuszu", "Stany nadrabiane wieczorem"]},
+   "right": {"title": "W ShopGold", "items": ["Masowe edycje wielu produktów", "Import i eksport CSV", "Stany synchronizowane cyklicznie"]}},
+  {"dur": 3.8, "size": 104,
+   "lines": ["Przed zmianą"], "accent": "domeny:",
+   "viz": "checklist",
+   "logos": ["shopgold", "googleanalytics"],
+   "items": [["Przekierowania 301", "stare adresy prowadzą do nowych"], ["Testowe zamówienie", "od koszyka do płatności i wysyłki"], ["Analityka i piksele", "GA4 i Pixel na nowym sklepie"]]},
+  {"dur": 3.0, "top": 600, "size": 120,
+   "lines": ["Zaplanuj migrację"], "accent": "z nami.",
+   "cta": "synctech.pl"}
+ ]
+}
