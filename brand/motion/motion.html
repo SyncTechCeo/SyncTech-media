@@ -51,7 +51,10 @@ body{font-family:"Inter",sans-serif;color:var(--ink);-webkit-font-smoothing:anti
 .bezel{position:absolute;inset:12px;border-radius:73px;background:#0C0F10}
 .screen{position:absolute;inset:24px;border-radius:62px;overflow:hidden;background:#F6F8F8;transform-style:preserve-3d}
 .screen.flat{overflow:hidden}
-.island{position:absolute;left:50%;top:22px;width:138px;height:40px;margin-left:-69px;border-radius:22px;background:#07090A;z-index:50}
+.island{position:absolute;left:50%;top:44px;width:136px;height:42px;margin-left:-68px;border-radius:22px;background:#050607;z-index:50;
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.04)}
+.island::after{content:"";position:absolute;right:16px;top:13px;width:18px;height:18px;border-radius:50%;
+  background:radial-gradient(circle at 35% 35%,#2B3C55 0%,#0E1522 45%,#050607 70%);box-shadow:0 0 0 2px #0B0D10}
 .glass{position:absolute;inset:24px;border-radius:62px;pointer-events:none;
   background:linear-gradient(115deg,rgba(255,255,255,0) 30%,rgba(255,255,255,.22) 42%,rgba(255,255,255,0) 54%);
   }
@@ -60,7 +63,9 @@ body{font-family:"Inter",sans-serif;color:var(--ink);-webkit-font-smoothing:anti
 
 /* ekran: mail */
 .lay{position:absolute;left:0;right:0;transform-style:preserve-3d}
-.sb{top:0;height:84px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;font:600 21px/1 "Inter";color:#0B1A17}
+.sb{top:0;height:84px;display:flex;align-items:center;justify-content:space-between;padding:4px 40px 0 54px;font:600 22px/1 "Inter";letter-spacing:-.01em;color:#0B1A17}
+.sb .ic{display:flex;gap:6px;align-items:center}
+.sb svg{display:block}
 .mh{top:92px;padding:0 26px}
 .mh .card{display:flex;gap:16px;align-items:center;padding:18px;border-radius:24px;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.05)}
 .mh .av{width:62px;height:62px;border-radius:50%;background:var(--grad);display:flex;align-items:center;justify-content:center;color:#fff;font:700 28px/1 "Inter Display"}
@@ -83,8 +88,8 @@ body{font-family:"Inter",sans-serif;color:var(--ink);-webkit-font-smoothing:anti
 .tiles .t i{display:block;height:112px;border-radius:14px;background:linear-gradient(160deg,#E9F4F1,#D4E8E3)}
 .tiles .t b{display:block;margin-top:12px;font:600 17px/1 "Inter"}
 .tiles .t s{display:block;margin-top:8px;height:10px;width:60%;border-radius:5px;background:#E8EDEC;text-decoration:none}
-.notif{position:absolute;left:18px;right:18px;top:16px;z-index:60;display:flex;gap:14px;align-items:center;padding:16px 18px;border-radius:28px;
-  background:rgba(255,255,255,.86);backdrop-filter:blur(18px);box-shadow:0 18px 40px -14px rgba(10,30,26,.35),0 0 0 1px rgba(0,0,0,.04)}
+.notif{position:absolute;left:18px;right:18px;top:100px;z-index:60;display:flex;gap:14px;align-items:center;padding:16px 18px;border-radius:28px;
+  background:rgba(255,255,255,.95);backdrop-filter:blur(24px);box-shadow:0 18px 40px -14px rgba(10,30,26,.35),0 0 0 1px rgba(0,0,0,.04)}
 .notif .av{width:54px;height:54px;border-radius:14px;background:var(--grad);flex:none;display:flex;align-items:center;justify-content:center;color:#fff;font:700 24px/1 "Inter Display"}
 .notif b{display:block;font:700 19px/1.15 "Inter"}
 .notif span{display:block;margin-top:3px;font:500 17px/1.25 "Inter";color:var(--ink2)}
@@ -100,8 +105,8 @@ body{font-family:"Inter",sans-serif;color:var(--ink);-webkit-font-smoothing:anti
 /* ekran brand */
 .brandscr{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:34px;
   background:radial-gradient(80% 60% at 50% 40%,#FFFFFF 0%,#EEF5F3 100%)}
-.brandscr img{width:190px;height:190px;border-radius:46px;box-shadow:0 30px 60px -24px rgba(20,70,60,.55)}
-.brandscr b{font:700 40px/1 "Inter Display";letter-spacing:-.03em}
+.brandscr img{width:360px;height:auto;display:block}
+.brandscr b{font:500 26px/1 "Inter";letter-spacing:.01em;color:var(--muted)}
 
 /* stary mail (rekwizyt) */
 #oldOuter{position:absolute;left:100px;top:820px;width:880px;height:620px;perspective:2200px}
@@ -182,7 +187,7 @@ function headHTML(b,i){
 function emailScreen(m){
   const tiles=(m.tiles||['Nowość','Bestseller','Polecane']).map(t=>`<div class="t"><i></i><b>${esc(t)}</b><s></s></div>`).join('');
   return `
-  <div class="lay sb" data-z="20"><span>9:41</span><span>●●● ◔</span></div>
+  <div class="lay sb" data-z="20"><span>9:41</span><span class="ic"><svg width="26" height="16" viewBox="0 0 26 16"><rect x="0" y="11" width="4.5" height="5" rx="1.2" fill="#0B1A17"/><rect x="7" y="7.5" width="4.5" height="8.5" rx="1.2" fill="#0B1A17"/><rect x="14" y="4" width="4.5" height="12" rx="1.2" fill="#0B1A17"/><rect x="21" y="0" width="4.5" height="16" rx="1.2" fill="#0B1A17"/></svg><svg width="22" height="16" viewBox="0 0 22 16"><path d="M11 15.5l3.2-3.6a4.6 4.6 0 0 0-6.4 0z" fill="#0B1A17"/><path d="M4.6 8.7a9.2 9.2 0 0 1 12.8 0l-1.9 2.1a6.4 6.4 0 0 0-9 0z" fill="#0B1A17"/><path d="M1.3 5.1a13.8 13.8 0 0 1 19.4 0l-1.9 2.1a11 11 0 0 0-15.6 0z" fill="#0B1A17"/></svg><svg width="34" height="16" viewBox="0 0 34 16"><rect x=".75" y=".75" width="28" height="14.5" rx="4.2" fill="none" stroke="#0B1A17" stroke-opacity=".4" stroke-width="1.5"/><rect x="3" y="3" width="21" height="10" rx="2.4" fill="#0B1A17"/><path d="M31 5.5v5c1.2-.4 2-1.4 2-2.5s-.8-2.1-2-2.5z" fill="#0B1A17" fill-opacity=".45"/></svg></span></div>
   <div class="lay mh" data-z="50"><div class="card"><div class="av">${esc((m.from||'S')[0])}</div><div><b>${esc(m.from||'Twój Sklep')}</b><span>${esc(m.subject||'')}</span></div></div>
      ${co(m.callouts&&m.callouts[0])}</div>
   <div class="lay hero" data-z="110"><div class="in"><div class="k">${esc(m.kicker||'')}</div><h3>${esc(m.hero||'')}</h3><p>${esc(m.heroSub||'')}</p></div>
@@ -205,10 +210,10 @@ function build(){
     <div class="btn-side" style="right:-5px;top:300px;height:150px;transform:translateZ(-6px)"></div>
     <div class="bezel"></div>
     <div class="screen" id="scr">${emailScreen(scr)}
-      <div class="brandscr" id="bscr"><img src="${window.BRAND.mark}"><b>synctech.pl</b></div>
+      <div class="brandscr" id="bscr"><img src="${window.BRAND.logo}"><b>synctech.pl</b></div>
       ${SP.notif?`<div class="notif" id="notif"><div class="av">${esc((scr.from||'S')[0])}</div><div><b>${esc(SP.notif.title)}</b><span>${esc(SP.notif.text)}</span></div><em>teraz</em></div>`:''}
     </div>
-    <div class="island" style="transform:translateZ(1px)"></div>
+    <div class="island" style="transform:translateZ(3px)"></div>
     <div class="glass" id="glass" style="transform:translateZ(2px)"></div>`;
   // stary mail
   if(SP.oldmail){
