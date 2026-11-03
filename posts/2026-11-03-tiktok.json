@@ -1,80 +1,88 @@
 {
- "platform": "tiktok",
- "eyebrow": "E-mail · Sklep",
- "note": "Wdrożenia i integracje e-commerce",
- "scenes": [
+ "style": "motion",
+ "screen": {
+  "from": "Twój Sklep",
+  "subject": "Dziękujemy za zamówienie",
+  "kicker": "Zamówienie przyjęte",
+  "hero": "Pakujemy Twoją paczkę",
+  "heroSub": "Damy znać, gdy wyruszy w drogę.",
+  "button": "Śledź zamówienie",
+  "tiles": [
+   "Nowość",
+   "Bestseller",
+   "Polecane"
+  ],
+  "callouts": [
+   "Logo i nadawca",
+   "Kolory marki",
+   "Jeden przycisk"
+  ]
+ },
+ "notif": {
+  "title": "Twój Sklep",
+  "text": "Dziękujemy za zamówienie! Pakujemy paczkę."
+ },
+ "oldmail": {
+  "title": "Potwierdzenie zamówienia",
+  "rows": [
+   [
+    "Produkt A",
+    "1",
+    "przyjęte"
+   ],
+   [
+    "Produkt B",
+    "2",
+    "przyjęte"
+   ]
+  ],
+  "text": "Dziękujemy za złożenie zamówienia. W razie pytań prosimy o kontakt.",
+  "links": [
+   "Kliknij tutaj",
+   "Regulamin",
+   "Nasza strona",
+   "Kontakt"
+  ]
+ },
+ "beats": [
   {
-   "dur": 2.4,
-   "top": 560,
-   "size": 120,
+   "type": "hook",
+   "dur": 2.8,
+   "size": 108,
    "lines": [
     "Mail z zamówieniem"
    ],
    "accent": "jak z 2010?"
   },
   {
-   "dur": 4.0,
-   "size": 96,
+   "type": "device",
+   "dur": 3.4,
+   "size": 112,
    "lines": [
     "Klient czyta go"
    ],
-   "accent": "na telefonie.",
-   "viz": "compare",
-   "left": {
-    "title": "Zwykły mail",
-    "items": [
-     "Sama tabelka i drobny tekst",
-     "Inne kolory niż w sklepie",
-     "Pięć linków, zero kierunku"
-    ]
-   },
-   "right": {
-    "title": "Szablon sklepu",
-    "items": [
-     "Czytelny na telefonie",
-     "Logo, kolory i fonty marki",
-     "Jeden wyraźny przycisk"
-    ]
-   }
+   "accent": "na telefonie."
   },
   {
+   "type": "explode",
    "dur": 4.4,
-   "size": 96,
+   "size": 112,
    "lines": [
-    "Mail, który"
+    "Każdy element"
    ],
-   "accent": "wygląda jak sklep.",
-   "viz": "email",
-   "email": {
-    "from": "Twój Sklep",
-    "subject": "Dziękujemy za zamówienie",
-    "time": "18:00",
-    "kicker": "Zamówienie przyjęte",
-    "hero": "Pakujemy Twoją paczkę",
-    "heroSub": "Damy znać, gdy wyruszy w drogę.",
-    "button": "Śledź zamówienie",
-    "tiles": [
-     "Nowość",
-     "Bestseller",
-     "Polecane"
-    ],
-    "badges": [
-     "Czytelny na telefonie",
-     "Jeden jasny przycisk"
-    ]
-   }
+   "accent": "ma swoje zadanie."
   },
   {
-   "dur": 3.8,
-   "size": 96,
+   "type": "stack",
+   "dur": 4.0,
+   "size": 112,
    "lines": [
-    "Sprawdź swoje"
+    "Sprawdź"
    ],
-   "accent": "maile:",
-   "viz": "checklist",
-   "items": [
+   "accent": "te 3 maile.",
+   "cards": [
     [
-     "Potwierdzenie zamówienia",
+     "Potwierdzenie",
      "spójne z wyglądem sklepu"
     ],
     [
@@ -88,14 +96,14 @@
    ]
   },
   {
-   "dur": 3.0,
-   "top": 580,
-   "size": 112,
+   "type": "cta",
+   "dur": 3.4,
+   "size": 116,
    "lines": [
     "Zrobimy Ci"
    ],
    "accent": "szablony.",
-   "cta": "synctech.pl"
+   "url": "synctech.pl"
   }
  ],
  "cover": {
@@ -104,6 +112,6 @@
   ],
   "accent": "jak z 2010?",
   "sub": "3 maile ze sklepu, które warto poprawić",
-  "eyebrow": "E-mail · Sklep"
+  "size": 108
  }
 }

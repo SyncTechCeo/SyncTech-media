@@ -1,0 +1,117 @@
+{
+ "style": "motion",
+ "screen": {
+  "from": "Twój Sklep",
+  "subject": "Dziękujemy za zamówienie",
+  "kicker": "Zamówienie przyjęte",
+  "hero": "Pakujemy Twoją paczkę",
+  "heroSub": "Damy znać, gdy wyruszy w drogę.",
+  "button": "Śledź zamówienie",
+  "tiles": [
+   "Nowość",
+   "Bestseller",
+   "Polecane"
+  ],
+  "callouts": [
+   "Logo i nadawca",
+   "Kolory marki",
+   "Jeden przycisk"
+  ]
+ },
+ "notif": {
+  "title": "Twój Sklep",
+  "text": "Dziękujemy za zamówienie! Pakujemy paczkę."
+ },
+ "oldmail": {
+  "title": "Potwierdzenie zamówienia",
+  "rows": [
+   [
+    "Produkt A",
+    "1",
+    "przyjęte"
+   ],
+   [
+    "Produkt B",
+    "2",
+    "przyjęte"
+   ]
+  ],
+  "text": "Dziękujemy za złożenie zamówienia. W razie pytań prosimy o kontakt.",
+  "links": [
+   "Kliknij tutaj",
+   "Regulamin",
+   "Nasza strona",
+   "Kontakt"
+  ]
+ },
+ "beats": [
+  {
+   "type": "hook",
+   "dur": 2.8,
+   "size": 108,
+   "lines": [
+    "Mail z zamówieniem"
+   ],
+   "accent": "jak z 2010?"
+  },
+  {
+   "type": "device",
+   "dur": 3.4,
+   "size": 112,
+   "lines": [
+    "Klient czyta go"
+   ],
+   "accent": "na telefonie."
+  },
+  {
+   "type": "explode",
+   "dur": 4.4,
+   "size": 112,
+   "lines": [
+    "Każdy element"
+   ],
+   "accent": "ma swoje zadanie."
+  },
+  {
+   "type": "stack",
+   "dur": 4.0,
+   "size": 112,
+   "lines": [
+    "Sprawdź"
+   ],
+   "accent": "te 3 maile.",
+   "cards": [
+    [
+     "Potwierdzenie",
+     "spójne z wyglądem sklepu"
+    ],
+    [
+     "Wysyłka",
+     "numer i link do śledzenia"
+    ],
+    [
+     "Newsletter",
+     "jeden cel, jeden przycisk"
+    ]
+   ]
+  },
+  {
+   "type": "cta",
+   "dur": 3.4,
+   "size": 116,
+   "lines": [
+    "Zrobimy Ci"
+   ],
+   "accent": "szablony.",
+   "url": "synctech.pl"
+  }
+ ],
+ "cover": {
+  "lines": [
+   "Mail z zamówieniem"
+  ],
+  "accent": "jak z 2010?",
+  "sub": "3 maile ze sklepu, które warto poprawić",
+  "size": 108
+ }
+}
