@@ -1,0 +1,19 @@
+{
+ "layout": "product",
+ "eyebrow": "Logistyka · Faktury · ERP",
+ "note": "Wdrożenia i integracje e-commerce",
+ "lines": ["Faktura i paczka", "bez przepisywania"],
+ "accent": "danych.",
+ "lead": "**Fakturownia, Subiekt i kurierzy** dostają zamówienie automatycznie.",
+ "product": {
+  "app": "Panel zamówień",
+  "title": "Dzisiejsze zamówienia",
+  "rows": [
+   {"logo": "allegro", "title": "Zamówienie #2101", "meta": "Allegro · faktura w Fakturowni", "status": "Faktura wysłana", "tone": "ok", "hl": true},
+   {"logo": "kaufland", "title": "Zamówienie #2102", "meta": "Kaufland · dokument w Subiekcie", "status": "W ERP", "tone": "info"},
+   {"logo": "dpd", "title": "Zamówienie #2103", "meta": "Sklep · kurier DPD", "status": "Do spakowania", "tone": "wait"},
+   {"logo": "dhl", "title": "Zamówienie #2104", "meta": "Sklep · kurier DHL", "status": "Wysłane", "tone": "done"}
+  ],
+  "toast": {"logo": "inpost", "title": "Etykieta InPost gotowa", "text": "Numer przesyłki wrócił do zamówienia"}
+ }
+}
