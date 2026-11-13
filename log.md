@@ -15,3 +15,4 @@
 | 2026-10-12 | 7 – Checklista / kroki: przygotowanie sklepu przed sezonem Q4 (post) | Przed sezonem Q4 sprawdź to. | pro, post, checklist, posts/2026-10-12.jpg (10:00) – NIEOPUBLIKOWANY: limit Metricool |
 | 2026-11-03 | 8 – ShopGold: migracja (Shoper, PrestaShop, WooCommerce) i duże katalogi (rolka) | Przenosisz sklep na ShopGold? | pro, reel, integrations+compare+checklist, posts/2026-11-03-reel.mp4, okładka posts/2026-11-03-reel-cover.jpg (10:00) |
 | 2026-11-06 | 9 – Logistyka, faktury i ERP (post) | Faktura i paczka bez przepisywania danych. | pro, post, product, posts/2026-11-06.jpg (10:00) |
+| 2026-11-13 | 10 – SellAsist: raporty, marża i wielomagazynowość (post) | Ile zostaje z zamówienia naprawdę? | pro, post, compare, posts/2026-11-13.jpg (10:00) |

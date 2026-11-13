@@ -1,0 +1,24 @@
+{
+ "layout": "compare",
+ "eyebrow": "SellAsist · Raporty i marża",
+ "note": "Wdrożenia i integracje e-commerce",
+ "lines": ["Ile zostaje", "z zamówienia"],
+ "accent": "naprawdę?",
+ "logos": ["sellasist", "allegro", "amazon", "kaufland"],
+ "left": {
+  "title": "Na oko",
+  "items": [
+   "Sprzedaż z każdego kanału liczysz osobno",
+   "Prowizje i wysyłka wychodzą po fakcie",
+   "Stany w dwóch magazynach w Excelu"
+  ]
+ },
+ "right": {
+  "title": "Z SellAsist",
+  "items": [
+   "Raport marży per produkt i kanał",
+   "Koszty widoczne przy zamówieniu",
+   "Wiele magazynów, jeden stan"
+  ]
+ }
+}
