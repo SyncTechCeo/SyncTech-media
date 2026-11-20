@@ -16,3 +16,4 @@
 | 2026-11-03 | 8 – ShopGold: migracja (Shoper, PrestaShop, WooCommerce) i duże katalogi (rolka) | Przenosisz sklep na ShopGold? | pro, reel, integrations+compare+checklist, posts/2026-11-03-reel.mp4, okładka posts/2026-11-03-reel-cover.jpg (10:00) |
 | 2026-11-06 | 9 – Logistyka, faktury i ERP (post) | Faktura i paczka bez przepisywania danych. | pro, post, product, posts/2026-11-06.jpg (10:00) |
 | 2026-11-13 | 10 – SellAsist: raporty, marża i wielomagazynowość (post) | Ile zostaje z zamówienia naprawdę? | pro, post, compare, posts/2026-11-13.jpg (10:00) |
+| 2026-11-20 | 11 – Marketing i analityka sklepu: czy dane GA4, Pixel/CAPI i Ads się zgadzają (post) | Czy Twoje dane o sprzedaży się zgadzają? | pro, post, checklist, posts/2026-11-20.jpg (10:00) |

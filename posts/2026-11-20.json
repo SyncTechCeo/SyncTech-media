@@ -1,0 +1,33 @@
+{
+ "layout": "checklist",
+ "eyebrow": "Analityka sklepu",
+ "note": "Wdrożenia i integracje e-commerce",
+ "lines": [
+  "Czy Twoje dane",
+  "o sprzedaży"
+ ],
+ "accent": "się zgadzają?",
+ "logos": [
+  "googleanalytics",
+  "googleads",
+  "meta"
+ ],
+ "items": [
+  [
+   "Zakupy w GA4 = zamówienia",
+   "porównaj jeden tydzień z panelem"
+  ],
+  [
+   "Konwersja liczy się raz",
+   "bez duplikatów po odświeżeniu"
+  ],
+  [
+   "Pixel + Conversions API",
+   "zdarzenia z deduplikacją"
+  ],
+  [
+   "Zgody cookies działają",
+   "tagi startują dopiero po zgodzie"
+  ]
+ ]
+}
